@@ -1,0 +1,72 @@
+/* Mobile view */
+
+.page-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-areas: 
+    "hd"
+    "main"
+    "ft";
+    grid-gap: 30px;
+}
+
+
+/*flex container */
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    grid-area: main;
+}
+
+
+/*flex items */
+
+.card{
+    background: #fff;
+    border: 1px solid #3C4F76;
+    border-radius: 1%;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 0;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+h2{
+    color: #3C4F76
+}
+
+h3{
+    color: lightgray;
+}
+
+img{
+    width: 70%;
+}
+
+footer{
+    grid-area: ft;
+}
+
+
+/* Media queries */
+
+@media(min-width: 600px){
+    .page-container{
+        grid-template-areas: 
+        "hd hd hd hd hd hd hd hd"
+        "main main main main main main main main"
+        "ft ft ft ft ft ft ft ft";
+    }
+}

@@ -1,0 +1,37 @@
+@import "homepage.css";
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 14px;
+    color: #666;
+    background-color: #fff;
+    line-height: 1em;
+    font-weight: 500;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background: #383F51;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    align-items: baseline;
+    grid-area: hd;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li{
+    margin: 0;
+    margin-left: 15px;
+}
+
