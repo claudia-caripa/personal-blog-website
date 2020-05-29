@@ -6,6 +6,8 @@
     Post-container styles
    =================================================================== */
 
+   /* Mobile first */
+
 .post-container{
     min-height: 100%;
     position: relative;
@@ -13,9 +15,9 @@
     grid-template-columns: 600px 200px;
     grid-template-rows: 100px 900px 100px;
     grid-template-areas: 
-    "hd hd hd hd hd hd hd hd"
-    "main main main main main main sb sb"
-    "ft ft ft ft ft ft ft ft";
+    "hd hd"
+    "main sb"
+    "ft ft";
     grid-gap: 30px;
 }
 
@@ -50,6 +52,34 @@ article{
     list-style: none;
     padding: 10px;
 }
+
+/* ===================================================================
+    Media queries
+   =================================================================== */
+
+/* Medium screens */
+
+@media(min-width: 600px) and (max-width: 1100px){
+    .post-container{
+        grid-template-areas: 
+        "hd hd hd hd hd hd hd hd"
+        "main main main main main main sb sb"
+        "ft ft ft ft ft ft ft ft";
+    } 
+}
+
+
+/* Larger screens */
+
+@media(min-width: 1101px){
+    .post-container{
+        grid-template-areas: 
+        "hd hd hd hd hd hd hd hd"
+        "main main main main main sb sb sb"
+        "ft ft ft ft ft ft ft ft";
+    } 
+}
+
 
 
 
