@@ -1,0 +1,15 @@
+.sidebar ul{
+    padding: 0;
+}
+
+.sidebar h3{
+    font-style: italic;
+}
+
+.sidebar p{
+    padding: 10px;
+}
+
+#about{
+    background-color: #E9C46A;
+}

@@ -1,7 +1,15 @@
-@import "homepage.css";
+/* ===================================================================
+    Main styles
+   =================================================================== */
 
 * {
     box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 body{
@@ -9,19 +17,31 @@ body{
     font-size: 14px;
     color: #666;
     background-color: #fff;
-    line-height: 1em;
+    line-height: 1.5em;
     font-weight: 500;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
+
+/* ===================================================================
+    Header styles
+   =================================================================== */
 
 header{
     display: flex;
     justify-content: space-between;
-    background: #383F51;
-    color: white;
+    background: #264653;
+    color: #fff;
     padding: 10px;
     margin: 0;
     align-items: baseline;
     grid-area: hd;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #fff;
 }
 
 nav ul{
@@ -33,5 +53,25 @@ nav ul{
 nav ul li{
     margin: 0;
     margin-left: 15px;
+}
+
+/* ===================================================================
+    Footer styles
+   =================================================================== */
+
+footer{
+    grid-area: ft;
+    background-color: #fdffb6;
+    height: 80px;
+    width: 100%;
+    line-height: 1em;
+    /* Set footer at bottom */
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+a{
+    color: #2a9d8f;
 }
 
