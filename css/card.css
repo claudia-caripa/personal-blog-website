@@ -34,3 +34,10 @@ h3{
 img{
     width: 70%;
 }
+
+button{
+    background: #fff;
+    border: none;
+    color: #2A9D8F;
+    cursor: pointer;
+}

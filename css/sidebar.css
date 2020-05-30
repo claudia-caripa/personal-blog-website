@@ -1,5 +1,6 @@
 .sidebar ul{
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 .sidebar h3{
@@ -12,4 +13,10 @@
 
 #about{
     background-color: #E9C46A;
+}
+
+.sidebar .elsewhere ul li{
+    font-size: 20px;
+    margin-top: 5px;
+    color: #2A9D8F;
 }

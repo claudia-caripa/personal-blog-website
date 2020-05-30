@@ -65,10 +65,12 @@ footer{
     height: 80px;
     width: 100%;
     line-height: 1em;
+    margin-top: 10px;
     /* Set footer at bottom */
     position: absolute;
     left: 0px;
     bottom: 0px;
+    display: flex;
 }
 
 a{
